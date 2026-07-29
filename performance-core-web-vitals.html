@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Web Vitals | Performance Optimization | Lucid Digital</title>
+<meta name="description" content="Three metrics, measured from real visitors, that quantify what "fast" actually means.">
+<link rel="canonical" href="https://www.yourdomain.com/performance-core-web-vitals.html">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Core Web Vitals | Performance Optimization | Lucid Digital">
+<meta property="og:description" content="Three metrics, measured from real visitors, that quantify what "fast" actually means.">
+<meta property="og:url" content="https://www.yourdomain.com/performance-core-web-vitals.html">
+<meta property="og:image" content="https://www.yourdomain.com/images/hero.webp">
+<meta property="og:site_name" content="Lucid Digital">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Core Web Vitals | Performance Optimization | Lucid Digital">
+<meta name="twitter:description" content="Three metrics, measured from real visitors, that quantify what "fast" actually means.">
+
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.yourdomain.com/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Performance Optimization",
+      "item": "https://www.yourdomain.com/performance.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Core Web Vitals",
+      "item": "https://www.yourdomain.com/performance-core-web-vitals.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Core Web Vitals",
+  "description": "Three metrics, measured from real visitors, that quantify what \"fast\" actually means.",
+  "author": {
+    "@type": "Person",
+    "name": "the site owner"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lucid Digital"
+  },
+  "mainEntityOfPage": "https://www.yourdomain.com/performance-core-web-vitals.html"
+}
+</script>
+</head>
+<body data-path="performance-core-web-vitals.html">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="navbar">
+  <div class="container row justify-between">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><svg width="22" height="22" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="13" width="3.2" height="10" rx="1" fill="#4338ca"/><rect x="6.2" y="9" width="3.2" height="14" rx="1" fill="#4338ca"/><rect x="11.4" y="4" width="3.2" height="19" rx="1" fill="#4338ca"/><rect x="16.6" y="9" width="3.2" height="14" rx="1" fill="#4338ca"/><rect x="21.8" y="13" width="3.2" height="10" rx="1" fill="#c8791f"/></svg></span>
+      Lucid Digital
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="seo.html">SEO</a>
+      <a href="marketing.html">Marketing</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="performance.html" aria-current="page">Performance</a>
+      <a href="design.html">Design</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <button class="menu-toggle" type="button" data-action="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" data-mobile-menu>
+  <a href="seo.html">SEO</a>
+    <a href="marketing.html">Marketing</a>
+    <a href="analytics.html">Analytics</a>
+    <a href="performance.html" aria-current="page">Performance</a>
+    <a href="design.html">Design</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+</div>
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a><span class="sep">/</span>
+    <a href="performance.html">Performance Optimization</a><span class="sep">/</span>
+    <span class="current">Core Web Vitals</span>
+  </nav>
+</div>
+<main id="main">
+  <section class="hero hero-topic">
+    <div class="container-narrow">
+      <div class="eyebrow">Performance Optimization</div>
+      <h1>Core Web Vitals</h1>
+      <p class="lede">Three metrics, measured from real visitors, that quantify what "fast" actually means.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="cluster-layout">
+        <aside class="toc">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#lcp-largest-contentful-paint">LCP — Largest Contentful Paint</a></li>
+      <li><a href="#inp-interaction-to-next-paint">INP — Interaction to Next Paint</a></li>
+      <li><a href="#cls-cumulative-layout-shift">CLS — Cumulative Layout Shift</a></li>
+      <li><a href="#field-data-vs-lab-data">Field data vs. lab data</a></li>
+    </ol>
+  </aside>
+        <div class="cluster-content">
+          <div class="content-section">
+      <h2 id="lcp-largest-contentful-paint">LCP — Largest Contentful Paint</h2>
+      <p>LCP measures how long it takes the largest visible element — usually a hero image or headline — to render. Slow server response time, render-blocking CSS or JavaScript, and unoptimized hero images are the most common causes of a poor score.</p>
+    </div>
+    <div class="content-section">
+      <h2 id="inp-interaction-to-next-paint">INP — Interaction to Next Paint</h2>
+      <p>INP measures how responsive a page feels to real input — a click, a tap, a keypress — across the full visit, not just the first interaction. Heavy JavaScript execution on the main thread is the usual culprit when INP is poor.</p>
+    </div>
+    <div class="content-section">
+      <h2 id="cls-cumulative-layout-shift">CLS — Cumulative Layout Shift</h2>
+      <p>CLS quantifies visual instability — content jumping around as images, ads, or web fonts load in. Reserving space for images and ads before they load, and choosing font-loading strategies that avoid a visible swap, are the standard fixes.</p>
+    </div>
+    <div class="content-section">
+      <h2 id="field-data-vs-lab-data">Field data vs. lab data</h2>
+      <p>The Chrome User Experience Report (CrUX) reflects real visitors on real devices and connections; Lighthouse simulates a single run under controlled conditions. The two can disagree — field data is what actually affects search ranking and real user experience, so treat it as the source of truth when the two conflict.</p>
+    </div>
+          <div class="callout">
+      <div class="eyebrow">Field data is the scoreboard</div>
+      <p>A perfect Lighthouse score with poor field data usually means the lab test doesn't reflect what real visitors — often on slower devices and networks — actually experience.</p>
+    </div>
+          <h3>Action checklist</h3>
+          <ul class="checklist">
+      <li><span class="mark">&check;</span><span>Check field data (CrUX) in Search Console, not just a lab test</span></li>
+      <li><span class="mark">&check;</span><span>Optimize the largest above-the-fold element specifically for LCP</span></li>
+      <li><span class="mark">&check;</span><span>Audit main-thread JavaScript for anything blocking interaction</span></li>
+      <li><span class="mark">&check;</span><span>Reserve space for images, ads, and embeds before they load</span></li>
+      <li><span class="mark">&check;</span><span>Re-test after any major dependency or ad-script addition</span></li>
+    </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+  <div class="container">
+    <div class="cta">
+      <h2>Working through this yourself?</h2>
+      <p class="lede">These checklists are meant to be used, not just read. Reach out if you want a second pair of eyes on your setup.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">Get in touch</a>
+        <a href="services.html" class="btn btn-secondary">See services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section related">
+  <div class="container">
+    <h2>More in Performance Optimization</h2>
+    <div class="grid grid-3">
+      <a href="performance-speed.html" class="card cluster-card">
+        <h3>Page Speed</h3>
+        <p>Most speed problems are really weight problems — less to download, less to run.</p>
+        <span class="link-arrow">Read more <span class="arrow">&rarr;</span></span>
+      </a>
+      <a href="performance-images.html" class="card cluster-card">
+        <h3>Image Optimization</h3>
+        <p>Usually the heaviest thing on the page — and the fastest win available.</p>
+        <span class="link-arrow">Read more <span class="arrow">&rarr;</span></span>
+      </a>
+      <a href="performance-ux.html" class="card cluster-card">
+        <h3>UX Metrics</h3>
+        <p>A fast lab score doesn't guarantee a page feels fast to a real person — these metrics close that gap.</p>
+        <span class="link-arrow">Read more <span class="arrow">&rarr;</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="brand"><svg width="20" height="20" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="13" width="3.2" height="10" rx="1" fill="#4338ca"/><rect x="6.2" y="9" width="3.2" height="14" rx="1" fill="#4338ca"/><rect x="11.4" y="4" width="3.2" height="19" rx="1" fill="#4338ca"/><rect x="16.6" y="9" width="3.2" height="14" rx="1" fill="#4338ca"/><rect x="21.8" y="13" width="3.2" height="10" rx="1" fill="#c8791f"/></svg> Lucid Digital</a>
+        <p>A working portfolio on SEO, marketing, analytics, performance, and design — built as one fast, static site.</p>
+      </div>
+      <div class="footer-col">
+      <h4>SEO & Fundamentals</h4>
+      <ul>
+        <li><a href="seo.html">Overview</a></li>
+        <li><a href="seo-keyword-research.html">Keyword Research</a></li>
+        <li><a href="seo-on-page.html">On-Page SEO</a></li>
+        <li><a href="seo-link-building.html">Link Building</a></li>
+        <li><a href="seo-technical.html">Technical SEO</a></li>
+      </ul>
+    </div>
+      <div class="footer-col">
+      <h4>Digital Marketing</h4>
+      <ul>
+        <li><a href="marketing.html">Overview</a></li>
+        <li><a href="marketing-content.html">Content Marketing</a></li>
+        <li><a href="marketing-social.html">Social Media</a></li>
+        <li><a href="marketing-email.html">Email Marketing</a></li>
+        <li><a href="marketing-ppc.html">PPC Campaigns</a></li>
+      </ul>
+    </div>
+      <div class="footer-col">
+      <h4>Analytics & GA4</h4>
+      <ul>
+        <li><a href="analytics.html">Overview</a></li>
+        <li><a href="analytics-ga4-setup.html">GA4 Setup</a></li>
+        <li><a href="analytics-events.html">Event Tracking</a></li>
+        <li><a href="analytics-audience.html">Audience Insights</a></li>
+        <li><a href="analytics-reports.html">Custom Reports</a></li>
+      </ul>
+    </div>
+      <div class="footer-col">
+      <h4>Performance Optimization</h4>
+      <ul>
+        <li><a href="performance.html">Overview</a></li>
+        <li><a href="performance-core-web-vitals.html">Core Web Vitals</a></li>
+        <li><a href="performance-speed.html">Page Speed</a></li>
+        <li><a href="performance-images.html">Image Optimization</a></li>
+        <li><a href="performance-ux.html">UX Metrics</a></li>
+      </ul>
+    </div>
+      <div class="footer-col">
+      <h4>Design</h4>
+      <ul>
+        <li><a href="design.html">Overview</a></li>
+        <li><a href="design-uiux.html">UI/UX Principles</a></li>
+        <li><a href="design-portfolio.html">Portfolio Showcase</a></li>
+        <li><a href="design-case-studies.html">Case Studies</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Lucid Digital. All rights reserved.</span>
+      <div class="row gap-sm">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
