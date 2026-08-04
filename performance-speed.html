@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page Speed | Performance Optimization | Lucid Digital</title>
+<title>Page Speed | Performance Optimization |OnionFrys</title>
 <meta name="description" content="Most speed problems are really weight problems — less to download, less to run.">
 <link rel="canonical" href="https://www.yourdomain.com/performance-speed.html">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -70,7 +70,7 @@
   <div class="container row justify-between">
     <a href="index.html" class="brand">
       <span class="brand-mark"><svg width="22" height="22" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="13" width="3.2" height="10" rx="1" fill="#4338ca"/><rect x="6.2" y="9" width="3.2" height="14" rx="1" fill="#4338ca"/><rect x="11.4" y="4" width="3.2" height="19" rx="1" fill="#4338ca"/><rect x="16.6" y="9" width="3.2" height="14" rx="1" fill="#4338ca"/><rect x="21.8" y="13" width="3.2" height="10" rx="1" fill="#c8791f"/></svg></span>
-      Lucid Digital
+      OnionFrys
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="seo.html">SEO</a>
@@ -126,19 +126,23 @@
         <div class="cluster-content">
           <div class="content-section">
       <h2 id="reducing-request-count">Reducing request count</h2>
-      <p>Every additional request carries connection overhead. Bundling assets sensibly, relying on HTTP/2 (or HTTP/3) multiplexing, and inlining truly critical CSS all reduce the number of round trips a browser needs before it can render anything useful.</p>
-    </div>
+          <p>"Every additional request carries connection overhead—each file the browser has to fetch adds time, even before it downloads. The more requests, the slower the page starts to feel. Reducing that count is one of the most reliable ways to speed things up.<br> <br>
+              Bundle assets sensibly, rely on HTTP/2 (or HTTP/3) multiplexing to handle multiple files efficiently, and inline truly critical CSS to avoid extra round trips. These all reduce the number of trips a browser needs before it can render anything useful. Fewer requests, faster paint."</p>
+          </div>
     <div class="content-section">
       <h2 id="caching-and-caching-basics">Caching and caching basics</h2>
-      <p>Proper cache headers mean a returning visitor doesn't re-download assets that haven't changed, and a CDN serves static files from a location physically closer to the visitor. Static hosting platforms like Vercel and Netlify handle most of this automatically, which is part of why they suit a static site like this one.</p>
+          <p>"Proper cache headers mean a returning visitor doesn't re-download assets that haven't changed—saving time and bandwidth. A CDN serves static files from a location physically closer to the visitor, cutting latency even further. Together, they make repeat visits noticeably faster.<br> <br>
+              Static hosting platforms like Vercel and Netlify handle most of this automatically—caching, CDN distribution, and asset optimization are built right in. That's part of why they suit a static site like this one. Less configuration, more speed, out of the box.</p>
     </div>
     <div class="content-section">
       <h2 id="javascript-s-real-cost">JavaScript's real cost</h2>
-      <p>A script's download size isn't its real cost — parsing, compiling, and executing it on the main thread often costs more than the download itself. Splitting code so a page only loads what it actually needs, rather than one bundle for the whole site, keeps that cost proportional to what a given page uses.</p>
+          <p>"A script's download size isn't its real cost—parsing, compiling, and executing it on the main thread often costs more than the download itself. The browser has to process every byte of JavaScript before it can run, and that processing takes time and CPU power. Big bundles mean big delays.<br> <br>
+           Splitting code so a page only loads what it actually needs—rather than one giant bundle for the whole site—keeps that cost proportional to what a given page uses. Load only what's necessary for that specific page, and the browser does less work. Faster load, snappier interactions, happier visitors."</p>
     </div>
     <div class="content-section">
       <h2 id="fonts-without-the-flash">Fonts without the flash</h2>
-      <p>A poorly loaded web font causes a visible flash of unstyled or invisible text. font-display: swap, preloading the critical font file, and subsetting to only the characters actually used all reduce that penalty.</p>
+             <p>"A poorly loaded web font causes a visible flash of unstyled or invisible text—readers see either a jarring style shift or nothing at all while they wait. Either way, it hurts trust and makes the page feel broken.<br> <br>
+                font-display: swap shows fallback text immediately while the custom font loads. Preloading the critical font file gives it priority so it arrives sooner. And subsetting to only the characters your site actually uses shrinks the file size. Together, they cut the visual penalty and keep text readable from the first moment."</p>
     </div>
           <div class="callout">
       <div class="eyebrow">Weight is the root cause</div>
@@ -157,14 +161,15 @@
     </div>
   </section>
 
-  <section class="section">
+<section class="section">
   <div class="container">
     <div class="cta">
-      <h2>Working through this yourself?</h2>
-      <p class="lede">These checklists are meant to be used, not just read. Reach out if you want a second pair of eyes on your setup.</p>
+      <h2>"This site is my learning log — every page tells a story"</h2>
+      <p class="lede">I'm Arun Karthick <br> "From first attempts to final versions, I document the breakthroughs, the bugs, and the 'why' behind every choice. Explore my work, view my background, or reach out — I'd love to connect."</p>
       <div class="hero-actions">
         <a href="contact.html" class="btn btn-primary">Get in touch</a>
-        <a href="services.html" class="btn btn-secondary">See services</a>
+        <a href="services.html" class="btn btn-secondary">see what i can do</a>
+        <a href="about.html" class="btn btn-primary">Portfolio</a>
       </div>
     </div>
   </div>
@@ -197,7 +202,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-col footer-brand">
-        <a href="index.html" class="brand"><svg width="20" height="20" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="13" width="3.2" height="10" rx="1" fill="#4338ca"/><rect x="6.2" y="9" width="3.2" height="14" rx="1" fill="#4338ca"/><rect x="11.4" y="4" width="3.2" height="19" rx="1" fill="#4338ca"/><rect x="16.6" y="9" width="3.2" height="14" rx="1" fill="#4338ca"/><rect x="21.8" y="13" width="3.2" height="10" rx="1" fill="#c8791f"/></svg> Lucid Digital</a>
+        <a href="index.html" class="brand"><svg width="20" height="20" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="13" width="3.2" height="10" rx="1" fill="#4338ca"/><rect x="6.2" y="9" width="3.2" height="14" rx="1" fill="#4338ca"/><rect x="11.4" y="4" width="3.2" height="19" rx="1" fill="#4338ca"/><rect x="16.6" y="9" width="3.2" height="14" rx="1" fill="#4338ca"/><rect x="21.8" y="13" width="3.2" height="10" rx="1" fill="#c8791f"/></svg> OnionFrys</a>
         <p>A working portfolio on SEO, marketing, analytics, performance, and design — built as one fast, static site.</p>
       </div>
       <div class="footer-col">
@@ -251,7 +256,7 @@
     </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Lucid Digital. All rights reserved.</span>
+      <span>&copy; 2026 OnionFrys. All rights reserved.</span>
       <div class="row gap-sm">
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
